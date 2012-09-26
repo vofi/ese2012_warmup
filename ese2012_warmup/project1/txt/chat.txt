@@ -1,0 +1,3 @@
+- item owner hinzufügen √
+- methode user active items (puts) √
+- sell/buy methode für den user  √

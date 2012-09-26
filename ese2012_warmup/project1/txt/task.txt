@@ -1,0 +1,19 @@
+The goal of this task is to implement a simple application to trade items. Users have an amount of credits. Users in the system can propose items to a fixed price, which other users can buy using their credits.
+
+The requirements you are asked to implement are:
+
+    Users have a name. √
+    Users have an amount of credits. √
+    A new user has originally 100 credit.  √
+    Items have a name.  √
+    Items have a price. √
+    An item can be active or inactive.  √
+    An item has an owner. √
+    A user can add a new item to the system with a name and a price; the item is originally inactive. √
+    A user can buy active items of another user (inactive items can't be bought). When a user buys an item, he becomes the owner; credit are transferred accordingly; immediately after the trade, the item is inactive. The transaction fails if the buyer has not enough credits. √
+    A user provides a method that lists his/her active items to sell.        √
+
+Note that this task only involves to model the requested features of the entities User and Item. We do not ask you to provide a user-interface. The code has to be accompanied with unit-tests though. For each of the above requirements, it is required to have at least one test method containing at least one assertion. For the last requirement, you must have at leat 3 test methods that cover different cases (enough/not enough credit, active/inactive, etc.)
+
+The code must be provided according to the guidelines:
+R

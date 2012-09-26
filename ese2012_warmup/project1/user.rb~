@@ -1,0 +1,46 @@
+class User
+	attr_accessor :name, :item_list, :credits
+	
+	def self.named( name )
+		user=self.new 
+		user.name=name
+    user
+	end
+
+	
+	def initialize
+		self.item_list= Array.new
+		self.credits = 100
+	end
+	
+	
+	def transaction(price)
+		credits = credits + price
+	end
+	
+	
+	def add_item(item)
+		item_list.push(item)
+	end
+	
+	
+	def remove_item
+		item= item_list.pop
+		item
+	end
+end
+
+User.new
+	
+
+
+
+
+
+
+	
+
+
+
+
+

@@ -1,0 +1,23 @@
+class Item
+	attr_accessor :name, :price, :active
+	
+	def self.item(name, price)
+		item = self.new
+		item.name = name
+		item.price= price
+		name
+	end                                                  
+	
+	def initialize
+		self.active = false
+	end
+	
+	def change_stance 
+		if active
+			active = false
+		else
+			active = true
+		end
+		active
+	end
+end
